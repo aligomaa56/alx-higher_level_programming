@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-""" creates class Square """
-
-
 class Square:
-    """ Square class"""
     def __init__(self, size=0):
         if type(size) != int and type(size) != float:
             raise TypeError("size must be a number")
@@ -29,25 +25,19 @@ class Square:
         return self.__size * self.__size
 
     def __eq__(self, other):
-        """check if equal to another square"""
         return(self.area() == other.area())
 
     def __lt__(self, other):
-        """check if less than other square"""
         return(self.area() < other.area())
 
     def __le__(self, other):
-        """check if less than or equal to other square"""
         return(self.area() <= other.area())
 
     def __ne__(self, other):
-        """check if not equal to another suqare"""
         return(self.area() != other.area())
 
     def __gt__(self, other):
-        """check if greater than another square"""
         return(self.area() > other.area())
 
     def __ge__(self, other):
-        """check if greater than or equal to another square"""
         return(self.area() >= other.area())

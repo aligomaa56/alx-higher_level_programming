@@ -87,7 +87,6 @@ class Square(Rectangle):
         Returns:
             dict: square.
         """
-        dict1 = self.__dict__
         dict2 = {}
         dict2['id'] = dict1['id']
         dict2['size'] = dict1['_Rectangle__width']

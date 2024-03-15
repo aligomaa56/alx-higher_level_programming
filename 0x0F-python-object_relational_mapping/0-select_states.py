@@ -8,7 +8,8 @@ if __name__ == "__main__":
                            password=argv[2], database=argv[3])
     c = mydb.cursor()
     c.execute("SELECT * FROM states ORDER BY id ASC")
-    for db in c:
-        print(db)
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
     c.close()
     mydb.close()

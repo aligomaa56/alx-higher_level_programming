@@ -10,11 +10,6 @@ from model_state import Base
 class City(Base):
     """
     City class that inherits from Base
-
-    Attributes:
-        id: Id city
-        name: Name of the city
-        state_id: State id
     """
     __tablename__ = "cities"
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
